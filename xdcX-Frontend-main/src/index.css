@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+/* Global Styling */
+
+:root {
+    --clr-text: #f1f1f1;
+    --clr-bg: #000000;
+    --clr-dim: #a1a1a1;
+    --clr-dark: #000;
+    --clr-primarybtn: #A7FFC5;
+    --clr-secbtn: #1B1B1BCC;
+}
+
+.head-text {
+    background: -webkit-linear-gradient(57.75deg, #0fff60 14.44%, #2cffdd 85.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Circular Pro Book;
+    font-style: normal;
+    font-weight: 450;
+    src: url(./assets/fonts/CircularPro-Book.42502858.woff2) format("woff2"),url(./assets/fonts/CircularPro-Book.2b11a166.woff) format("woff")
+}
+
+@font-face {
+    font-family: Circular Pro Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url(./assets/fonts/CircularPro-Medium.a0c8c0d8.woff2) format("woff2"),url(./assets/fonts/CircularPro-Medium.80fc1af0.woff) format("woff")
+}
+
+body {
+    font-family: Circular Pro Medium,sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--clr-text);
+    background-color: var(--clr-bg);
+
+}
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #32ef12;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+    filter: blur(50px);
+    background: radial-gradient(circle at 50% 50%, #32ef12, #30fea9);
+  }
+
+a {
+    color: var(--clr-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: var(--clr-text);
+}
+
+button {
+    font-family: Circular Pro Book,sans-serif;
+    cursor: pointer;
+}
+ /* Global Styling end */

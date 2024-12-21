@@ -1,0 +1,99 @@
+.title {
+    color: var(--clr-layout);
+    font-size: 24px;
+    margin-left: 42%;
+}
+
+.colordim {
+    color: var(--clr-dim);
+}
+
+.colordark {
+    color: var(--clr-dark);
+}
+
+.showbalance {
+    align-items: center;
+}
+
+.xdclogo {
+    width: 40px;
+    height: 30px;
+}
+
+.balance {
+    font-family: 'Inconsolata', monospace !important;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.payment-img {
+    width: 85%;
+    transform: translateY(12px);
+}
+
+.fade-in-left {
+    animation: fade-in-left 1s ease;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.bounce-in {
+    animation: bounce-in 2s ease;
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.transfer-btn {
+    width: 20%;
+    height: 40px;
+}
+
+.ptp-field {
+    padding-left: 15%;
+}
+
+.ptp-head {
+    position: relative;
+}
+
+.ptp-head::before {
+    content: "";
+    border-radius: 50%;
+    opacity: 0.54;
+    filter: blur(100px);
+    background: -webkit-linear-gradient(57.75deg, #32ef12 14.44%, #30fea9 85.65%);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    left: 0;
+}
